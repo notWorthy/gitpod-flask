@@ -7,4 +7,4 @@ tasks:
     python3 -m pip install -r requirements.txt
   command: >
     export FLASK_APP=flask_app && 
-    python3 flask run -p 3000
+    flask run -p 3000
