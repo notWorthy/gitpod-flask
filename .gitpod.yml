@@ -1,8 +1,10 @@
 ports: 
-  - port: 3000
-    onOpen: open-preview
+- port: 3000
+  onOpen: open-preview
 
 tasks:
-  - init: pip3 install -r requirements.txt
-    command: export FLASK_APP=flask_app && 
-    flask run -p 3000
+- init: >
+    python3 -m pip install -r requirements.txt
+  command: >
+    export FLASK_APP=flask_app && 
+    python3 flask run -p 3000
